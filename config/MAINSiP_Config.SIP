@@ -135,12 +135,68 @@
 #Graphical User Interface Options
 #################################################################################
 
+#If you are not satisfied with the customizability of the GUI, 
+#Then you may create your own utilizing the editor, which will be released later.
+
 #Sets the GUIs update rate, value is in fps, and the default value, might slow
 #older computers, so adjust as needed.
 [GUIRefreshRate]:30
 
-#Sets the GUIs base color, the lowest level color of the interface.
-#Colors are in Hexidecimal
-#Default is black
-[lowestLevelColor]: 000000
+#Sets the ampunt of layers to use in the base GUI.
+#The minimal needed is 3, the max is 8.
+#The top most color iz always the responsive text channel.
 
+#Sets the GUIs base color, the lowest level color of the interface.
+#Colors are in Hexidecimal or simple single word form.
+#Default is black
+[0LevelColor]:Black
+
+#Sets the second level color.
+#Default is Dark Grey.
+[1LevelColor]:Dark_Gray
+
+#Sets the third level color.
+#Default is sky blue
+[2LevelColor]:sky_blue
+
+#Sets the fourth level color.
+#Default is null.
+[3LevelColor]:null
+
+#Sets the fifth level color.
+#Default is null.
+[4LevelColor]:null
+
+#Sets the sixth level color.
+#Default is null
+[5LevelColor]:null
+
+#Sets the seventh level color.
+#Default is null
+[6LevelColor]'null
+
+#Sets the eighth level color.
+#Default is null
+[7LevelColor]:null
+
+#Sets the displayed text size.
+#Options are 1-5
+#Default is 2
+[textSize]: 2
+
+#Sets the base animation for the background if used.
+#Options are Waveform, Pulseform, and Barform
+#Waveform is a line drawn that modulatess to the wave of the audio being played.
+#Pulseform emits visual animated lines that adjust to the amplitude peaks of the audio.
+#Barform is an animated spectrum visualizer in the center orm of visual segmented bars.
+#Default is Waveform
+[AnimType]:Waveform
+
+#Sets the animation modifier, can be left out.
+#If left out set this to null.
+#Modifiers are null, glitch, frag, and rainbow.
+#Glitch creates a glithy visual similar to broken interpreters for a visual signal.
+#Frag fragments the visual.
+#Default is glitch
+#This most likely wont be implemented any time soon.
+[modType]: glitch
